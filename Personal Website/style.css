@@ -571,6 +571,7 @@ body.darkMode{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-wrap: nowrap;
 }
 
 @media (max-width: 550px) {
