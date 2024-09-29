@@ -172,16 +172,16 @@ body.darkMode{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
-    transform: translateY(5px);
+    transform: translateY(2px);
 
     animation: movement 3s ease-in-out infinite;
 }
 @keyframes movement {
     50%{
-        transform: translateY(5px);
+        transform: translateY(2px);
     }
     80%{
-        transform: translateY(-5px);
+        transform: translateY(-2px);
     }
 }
 .bigger::before{
@@ -199,7 +199,7 @@ body.darkMode{
 
 .bigger img{
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     max-height: 80vh;
     width: 100%;
     border-radius:  30%;
