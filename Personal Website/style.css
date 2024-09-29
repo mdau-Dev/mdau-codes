@@ -93,7 +93,7 @@ body.darkMode{
 
 }
 .headers img {
-    max-height: 1vh;
+    max-height: 5vh;
     max-width: 30%;
     cursor: pointer;
 }
