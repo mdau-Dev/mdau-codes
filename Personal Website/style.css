@@ -580,7 +580,7 @@ body.darkMode{
         }
 
     .loaderWrapper{
-        max-height: 50dvh;
+        max-height: 100vh;
     }
 
     .logo{
