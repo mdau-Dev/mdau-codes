@@ -93,7 +93,7 @@ body.darkMode{
 
 }
 .headers img {
-    max-height: 5vh;
+    max-height: 7vh;
     max-width: 30%;
     cursor: pointer;
 }
@@ -199,7 +199,7 @@ body.darkMode{
 
 .bigger img{
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     max-height: 80vh;
     width: 100%;
     border-radius:  30%;
