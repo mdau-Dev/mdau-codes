@@ -203,7 +203,7 @@ body.darkMode{
 
 .bigger img{
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
     max-height: 80vh;
     width: 100%;
     border-radius:  30%;
