@@ -168,10 +168,6 @@ body.darkMode{
     height: max-content;
     width: 40%;
     padding-left: 10px;
-    border: .1px solid #044158;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 50%;
     transform: translateY(2px);
 
     animation: movement 3s ease-in-out infinite;
@@ -188,18 +184,26 @@ body.darkMode{
     content: '';
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0%;
     height: 100%;
     position: absolute;
     /* background: #07151f; */
     background-color: var(--themeColor);
-    animation: showRight 10s ease forwards;
+    animation: showRight 10s ease-in-out infinite;
     animation-delay: .5s;
+}
+@keyframes showRight {
+    50%{
+        width: 90%;
+    }
+    100% {
+        width: 0;
+    }
 }
 
 .bigger img{
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     max-height: 80vh;
     width: 100%;
     border-radius:  30%;
@@ -365,12 +369,7 @@ body.darkMode{
 .home_icons a:hover{
     color: black;
 }
-@keyframes showRight{
 
-100%{
-    width: 0;
-}
-}
 
 
 
