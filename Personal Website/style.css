@@ -166,18 +166,19 @@ body.darkMode{
 }
 .bigger{
     height: max-content;
-    width: 40%;
+    width: 60%;
     padding-left: 10px;
-    transform: translateY(2px);
+    transform: translateY(10px);
 
-    animation: movement 3s ease-in-out infinite;
+        mask-image: linear-gradient(black, #000, transparent, transparent);
+        -webkit-mask-image: radial-gradient(#000, #000, transparent, transparent);
 }
 @keyframes movement {
     50%{
-        transform: translateY(2px);
+        transform: translateY(30px);
     }
     80%{
-        transform: translateY(-2px);
+        transform: translateY(-40px);
     }
 }
 .bigger::before{
@@ -203,14 +204,15 @@ body.darkMode{
 
 .bigger img{
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
+    height: max-content;
     max-height: 80vh;
     width: 100%;
-    border-radius:  30%;
+    border-radius:  10%;
     transition: all .5s;
     
-    mask-image: linear-gradient(black,#000,transparent,transparent);
-    -webkit-mask-image: radial-gradient(#000,#000,transparent,transparent);
+    animation: movement 10s ease-in-out infinite;
+
 }
 .bigger img:hover{
     src: url(images/md2.jpg);
@@ -225,6 +227,7 @@ body.darkMode{
     font-size: 1em;
     overflow: hidden;
 
+    background-attachment: fixed;
     
 }
 .content h1{
@@ -453,6 +456,55 @@ body.darkMode{
 }
 
 
+.servicesWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    min-width: 100%;
+    min-height: 70vh;
+    max-height: 100vh;
+    /* background: #ddd; */
+    padding: 20px;
+    font-size: 1.2em;
+    
+    background: linear-gradient(var(--themeColor),#076445,var(--themeColor));
+}
+.card{
+    /* transform: translateX(-200%);
+    transition: transform .8s;
+    transform-style: preserve-3d; */
+    background: url(images/log-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(10px); */
+    background-blend-mode: darken;
+    
+    background-color: #075b7c;
+    border-radius: 3px;
+    border: .1px solid gray;
+    min-height: 40vh;
+    width: 30%;
+    padding: 20px;
+    margin: ;
+    text-align: start;
+}
+
+
+.card *{
+    padding: 7px;
+}
+.card h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1.4em;
+}
+.card p{
+    line-height: 1.5;
+}
+
 
 .wrapperProjects {
     /* background: url(images/logo2.png);
@@ -628,9 +680,9 @@ body.darkMode{
         padding-left: 0;
         overflow: hidden;
         z-index: 2;
-
+/* 
         mask-image: linear-gradient(#000, #000, transparent);
-        -webkit-mask-image: linear-gradient(#000, #000, transparent);
+        -webkit-mask-image: linear-gradient(#000, #000, transparent); */
         border-radius: 1%;
         border: 0px solid #00acf033;
     }
@@ -647,8 +699,8 @@ body.darkMode{
         opacity: .4;
     }
     .bigger img{
-        object-fit:cover;
-        object-position: center;
+        object-fit: cover;
+        object-position: top;
         max-height: 70vh;
         width: 100%;
         margin-top: 0;
