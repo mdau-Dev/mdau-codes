@@ -15,5 +15,11 @@ console.log('Mdau')
 const imageParent=document.querySelector('.bigger');
 const image=document.querySelector('.myImage');
 imageParent.addEventListener('mouseover',(e)=>{
-    image.src=`url(${images/smile.jpg})`;
+    image.src=`url(${image/smile.jpg})`;
 })
+
+//     const serviceCardWrapper= document.querySelector('.wrapServices')
+//     serviceCardWrapper.classList.remove('playAnimation');
+// setInterval(()=>{
+//     serviceCardWrapper.classList.add('playAnimation');
+// },2000)
