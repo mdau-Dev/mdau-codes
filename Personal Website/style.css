@@ -483,15 +483,16 @@ body.darkMode{
     /* backdrop-filter: blur(10px); */
     background-blend-mode: darken;
     
-    background-color: #075b7c;
+    background-color: #f09307;
     border-radius: 3px;
     border: .1px solid gray;
     min-height: 40vh;
     width: 30%;
     padding: 20px;
-    margin: ;
     text-align: start;
-}
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);}
 
 
 .card *{
