@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 17px;
     font-family: 'Poppins', Times, serif;
    }
    *{
@@ -90,7 +91,7 @@ body.darkMode{
     justify-content: space-between;
     align-items: center;
     font-style: italic;
-    font-family: consolas;
+    /* font-family: consolas; */
     z-index: 100;
 
 }
@@ -165,14 +166,8 @@ body.darkMode{
     gap: 30px;
     width: 100%;
     /* padding: 0 10%; */
-    background-attachment: fixed;
-    background-image: url(images/AI\ 2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000,#000000d3,#024e619d,#000);
+    background: linear-gradient(90deg,var(--themeColor), var(--themeColor), var(--themeColor), var(--themeColor));
+    
 }
 .bigger{
     height: max-content;
@@ -222,8 +217,8 @@ body.darkMode{
     border-radius: 7px;
     width: 50%;
     max-width: 100%;
-    padding: 5px;
-    font-size: 1em;
+    padding: 10px;
+    backdrop-filter: blur(3px);
     overflow: hidden;
 
 }
@@ -233,7 +228,7 @@ body.darkMode{
     margin-top: 10px;
 }
 .content p{
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-top: 10px;
     position: relative;
@@ -245,7 +240,7 @@ body.darkMode{
     width: 100%;
     height: 100%;
     /* background-color: #07151f; */
-    background-color: var(--themeColor);
+    background-color: #024e6123;
     position: absolute;
     animation: showRight 5s ease-in-out forwards;
     animation-delay: 2s;
@@ -374,7 +369,17 @@ body.darkMode{
 
 
 .myInfoWrapper{
-    background: linear-gradient(var(--themeColor),var(--themeColor),#0ada9156,var(--themeColor),var(--themeColor));
+    /* background: linear-gradient(var(--themeColor),var(--themeColor),#0ada9156,var(--themeColor),var(--themeColor)); */
+    background-attachment: fixed;
+    background-image: url(images/AI\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-image-slice: fill 1;
+    border-image-source: linear-gradient(#000,#000000d3,#024e619d,#000);
+
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -478,7 +483,7 @@ body.darkMode{
     /* border-width: 10px;
     border-style: solid; */
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000,#000000af,#01171dbd);
+    border-image-source: linear-gradient(#000,#000000af,#01171dbd,#000);
     /* background: linear-gradient(var(--themeColor), var(--themeColor), #0ada9156, var(--themeColor), var(--themeColor)); */
 }
 .servicesWrapper h3{
