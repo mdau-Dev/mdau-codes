@@ -378,7 +378,7 @@ body.darkMode{
     background-position: center;
     background-attachment: fixed;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000,#000000d3,#024e619d,#000);
+    border-image-source: linear-gradient(#000000c0,#00000086,#024e6163,#000000c7);
 
 
     display: flex;
@@ -479,7 +479,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#00000093,#000000af,#01171dbd,#0000009c);
+    border-image-source: linear-gradient(#000000b7,#000000af,#01171dbd,#000000cb);
 }
 .servicesWrapper h3{
     color: #38f7b7;
