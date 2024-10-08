@@ -378,7 +378,7 @@ body.darkMode{
     background-position: center;
     background-attachment: fixed;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000000e1,#00000086,#00080a63,#000000e1);
+    border-image-source: linear-gradient(#000,#000000a9,#000,#000);
 
 
     display: flex;
@@ -407,14 +407,17 @@ body.darkMode{
     margin: 30px;
     border: .1px solid gray;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 4px;
     line-height: 1.5;
-
-    
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 .myInfo p{
     padding: 5px;
     font-size: 1.2em;
+}
+.about_Me{
+    border-right: 0px solid gray;
 }
 
 .myInfo .myEmail{
@@ -432,14 +435,13 @@ body.darkMode{
     font-size: 1.3em;
 }
 
-.skills_wrapper li{
+
+.skills_wrapper{
+    border-left: 0px solid gray;
+}
+.skills_wrapper li {
     margin-left: 7px;
     font-size: 1.2em;
-}
-.skills_wrapper{
-    border: 0px solid gray;
-    border-right: .5px solid gray;
-    border-left: .5px solid gray;
 }
 .skills_wrapper .aws{
     list-style-type: none;
@@ -451,7 +453,6 @@ body.darkMode{
 }
 
 .socials{
-    border-bottom: 0px solid gray;
     border-top: 0px solid gray;
     flex-wrap: wrap;
 }
@@ -479,7 +480,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000000e1,#000000af,#01171dbd,#000000e1);
+    border-image-source: linear-gradient(#000000e1,#000000af,#01171dbd,#000);
 }
 .servicesWrapper h3{
     color: #38f7b7;
@@ -622,28 +623,71 @@ body.darkMode{
 
 
 
-.contacts{
-    width: 100%;
+/* This is the contact me section styling */
+.contactMeWrapper{
+    width: 99%;
+    margin: auto;
+    background-image: url(images/AI\ uni.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    overflow: hidden;
+    border-radius: 4px;
+    border-image-slice: fill 1;
+    border-image-source: linear-gradient(#000000e1,#000000af,#01171dbd,#000);
+}
+.contactDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
     padding: 16px;
+}
+.contactDiv div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    padding: 20px;
 }
-.contacts .c1{
-    padding: 10px 0px;
+.contactDiv p{
+    color: #4dc3f1;
+    font-weight: 600;
+    font-size: 1.2em;
+    max-width: max-content;
+    margin: 10px;
 }
-.contacts .myEmail{
-    width: 100%;
-    text-decoration: none;
-    color: #07f0a2;
-    font-size: 1.1em;
-    font-style: italic;
-    text-shadow: 1px 1px 1px;
-    letter-spacing: 2px;
-    padding: 10px;
+.contactDiv input{
+    background: #00000060;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    min-width: 100px;
+    max-width: max-content;
+    font-size: 1.4em;
 }
+.contactDiv textarea{
+    background: #00000060;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+.contactDiv ::placeholder{
+    color: #13f0a69a;
+
+}
+.contactDiv input:{
+    border: .1px solid gray;
+}
+
+
 
 
 .nameWrapper{
@@ -797,8 +841,6 @@ body.darkMode{
 
 
     .myInfoWrapper{
-        border-image-source: linear-gradient(#000000d3, #000000d3, #024e61c4, #000);
-        display: flex;
         flex-direction: column;
         justify-content: center;
         width: 90%;
@@ -814,8 +856,6 @@ body.darkMode{
          margin: auto;
          padding: 10px;
          border: .1px solid #f09307;
-         border-radius: 6px;
-         line-height: 1.5;
     }
     .about_Me{
         border-bottom: 0px solid gray;
