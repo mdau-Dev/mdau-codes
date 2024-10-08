@@ -625,7 +625,12 @@ body.darkMode{
 
 /* This is the contact me section styling */
 .contactMeWrapper{
-    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 97%;
     margin: auto;
     background-image: url(images/AI\ uni.webp);
     background-repeat: no-repeat;
@@ -636,11 +641,12 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000000e1,#000000af,#01171dbd,#000);
+    border-image-source: linear-gradient(#000,#000000af,#01171dbd,#000);
 }
 .contactDiv{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 90%;
     margin: auto;
@@ -649,11 +655,12 @@ body.darkMode{
 .contactDiv div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: start;
     padding: 20px;
 }
 .contactDiv p{
-    color: #4dc3f1;
+    color: #00abf0;
     font-weight: 600;
     font-size: 1.2em;
     max-width: max-content;
@@ -666,7 +673,7 @@ body.darkMode{
     color: #fff;
     border-radius: 3px;
     padding: 20px;
-    min-width: 100px;
+    min-width: 450px;
     max-width: max-content;
     font-size: 1.4em;
 }
@@ -680,11 +687,26 @@ body.darkMode{
     padding: 10px 10px;
 }
 .contactDiv ::placeholder{
-    color: #13f0a69a;
+    /* color: #13f0a69a; */
 
 }
 .contactDiv input:{
     border: .1px solid gray;
+}
+.contactMeWrapper .sendEmail{
+    padding: 10px;
+    border: .1px solid gray;
+    background: #00000060;
+    color: #00abf0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.contactMeWrapper .sendEmail:hover{
+    background-color: #f0930760;
+    color: #fff;
 }
 
 
