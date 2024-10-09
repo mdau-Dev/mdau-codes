@@ -719,6 +719,7 @@ body.darkMode{
     justify-content: center;
     align-items: center;
 }
+
 .copy{
     width: 50%;
     margin: auto;
@@ -940,6 +941,73 @@ body.darkMode{
 .wrapperProjects h1{
     font-size: 1.2em;
 }
+
+/* This is the contact me section styling */
+.contactMeWrapper {
+    padding: 5px;
+    width: 97%;
+
+}
+
+.contactDiv {
+
+    width: 90%;
+    margin: auto;
+    padding: 7px;
+}
+
+.contactDiv div {
+    padding: 5px;
+}
+
+.contactDiv p {
+    color: #00abf0;
+    font-weight: 600;
+    font-size: 1em;
+    max-width: max-content;
+    margin: 10px;
+}
+
+.contactDiv input {
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.contactDiv textarea {
+    max-width: 90vw;
+    margin: auto;
+    border-radius: 2px;
+    font-size: 1em;
+    padding: 5px 5px;
+}
+
+.contactDiv ::placeholder {
+    /* color: #13f0a69a; */
+
+}
+
+
+.contactMeWrapper .sendEmail {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.contactMeWrapper .sendEmail:hover {
+
+}
+
+
+.copy{
+    font-size: .6em;
+    padding: 5px;
+    text-wrap: wrap;
+}
+.copy span{
+    display: none;
+}
+
 }
 
 
