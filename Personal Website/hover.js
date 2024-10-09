@@ -24,22 +24,22 @@ imageParent.addEventListener('mouseover',(e)=>{
 //     serviceCardWrapper.classList.add('playAnimation');
 // },2000)
 
-const input=document.querySelectorAll('input,textarea');
-input.forEach(input=>{
-    input.addEventListener('hover',()=>{
-            input.style.border='.1px solid red'
-    })
-})
+// const input=document.querySelectorAll('input,textarea');
+// input.forEach(input=>{
+//     input.addEventListener('hover',()=>{
+//             input.style.border='.1px solid red'
+//     })
+// })
 
-function sendEmailMessage(e){
-    e.preventDefault();
-    const button= document.querySelector('.sendEmail');
-    const nameInput=document.querySelector('.name_input');
-    const emailInput=document.querySelector('.email_input');
-    const messageInput=document.querySelector('.messo_input');
+// function sendEmailMessage(e){
+//     e.preventDefault();
+//     const button= document.querySelector('.sendEmail');
+//     const nameInput=document.querySelector('.name_input');
+//     const emailInput=document.querySelector('.email_input');
+//     const messageInput=document.querySelector('.messo_input');
 
-    Email.send({
+//     Email.send({
         
-        host: 
-    })
-}
+//         host: 
+//     })
+// }
