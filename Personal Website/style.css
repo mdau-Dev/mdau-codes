@@ -464,6 +464,7 @@ body.darkMode{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 
     width: 98%;
     margin: auto;
@@ -641,7 +642,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000,#000000af,#01171dbd,#000);
+    border-image-source: linear-gradient(#29024de0,#29024d9a,#01171dbd,#000);
 }
 .contactDiv{
     display: flex;
@@ -669,6 +670,7 @@ body.darkMode{
 .contactDiv input{
     background: #00000060;
     backdrop-filter: blur(2px);
+    border: .1px solid #770addef;
     -webkit-backdrop-filter: blur(2px);
     color: #fff;
     border-radius: 3px;
@@ -679,19 +681,23 @@ body.darkMode{
 }
 .contactDiv textarea{
     background: #00000060;
+    border: .1px solid #770addef;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border-radius: 2px;
     color: #fff;
     font-size: 1.2em;
     padding: 10px 10px;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#6e0bcaf8, #0168dd9a, #0392b9bd, #fff);
 }
 .contactDiv ::placeholder{
     /* color: #13f0a69a; */
 
 }
-.contactDiv input:{
-    border: .1px solid gray;
+.contactDiv input::-moz-focus-outer{
+    border: 0px solid #000;
 }
 .contactMeWrapper .sendEmail{
     padding: 10px;
