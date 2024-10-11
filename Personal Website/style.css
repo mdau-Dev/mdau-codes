@@ -59,8 +59,8 @@ body.darkMode{
     margin: auto;
     
     color: hsl(86 80 43/0.1);
-    /* background: linear-gradient(90deg,#07f3a4,#07f3a4,#222,#4dc3f1,#20baf7); */
-    background: linear-gradient(90deg, #fff, #aaa, #222, #aaa, #fff);
+    background: linear-gradient(90deg,#07f3a4,#07f3a4,#222,#4dc3f1,#20baf7);
+    /* background: linear-gradient(90deg, #fff, #aaa, #222, #aaa, #fff); */
 
     background-clip: text;
     background-position: center;
@@ -270,6 +270,15 @@ body.darkMode{
     90%{
         color: #00abf0;
         }
+}
+.content .hire{
+    color: #38f7b7;
+    text-decoration: none;
+    transition: all 1s;
+}
+.content .hire:hover{
+    background-color: #076445;
+    font-size: 1.3em;
 }
 
 .btn_box{
