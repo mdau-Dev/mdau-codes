@@ -11,7 +11,14 @@
     --headers2: 
    }
 body{
-    /* background-color: #07151f; */
+    --background1: #000;
+    --background2: #6e04d1fb;
+    --background3: #6b04ccfb;
+    --background4: #07f3a4;
+    --background5: #09aa04;
+    --background6: #4dc3f1;
+
+
     background-color: var(--themeColor);
     position: relative; 
     color: #ececec;
@@ -100,6 +107,7 @@ body.darkMode{
     max-height: 12vh;
     max-width: 30%;
     cursor: pointer;
+    border-radius: 30%;
 }
 .logo{
     width: 70%;
@@ -174,10 +182,7 @@ body.darkMode{
     height: max-content;
     width: 30%;
     padding-left: 10px;
-    transform: translateY(10px);
 
-        /* mask-image: linear-gradient(black, #000, transparent, transparent);
-        -webkit-mask-image: radial-gradient(#000, #000, transparent, transparent); */
 }
 @keyframes movement {
     50%{
@@ -185,15 +190,6 @@ body.darkMode{
     }
     80%{
         transform: translateY(-40px);
-    }
-}
-/*  */
-@keyframes showRight {
-    50%{
-        width: 90%;
-    }
-    100% {
-        width: 0;
     }
 }
 
@@ -206,7 +202,6 @@ body.darkMode{
     border-radius:  10%;
     transition: all .5s;
     
-    animation: movement 10s ease-in-out infinite;
 
 }
 
@@ -242,10 +237,16 @@ body.darkMode{
     width: 100%;
     height: 100%;
     /* background-color: #07151f; */
-    background-color: #024e6123;
+    background-color: var(--themeColor);
     position: absolute;
     animation: showRight 5s ease-in-out forwards;
     animation-delay: 2s;
+}
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
 }
 
 .content h3{
@@ -378,8 +379,7 @@ body.darkMode{
     background-position: center;
     background-attachment: fixed;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000,#000000a9,#000,#000);
-
+    border-image-source: linear-gradient(var(--background1),var(--background2), #29024d9a, #01171dbd, var(--background3));
 
     display: flex;
     justify-content: space-around;
@@ -466,7 +466,7 @@ body.darkMode{
     flex-direction: column;
     flex-wrap: wrap;
 
-    width: 98%;
+    width: 100%;
     margin: auto;
     min-height: 70vh;
     padding: 30px;
@@ -481,7 +481,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#000000e1,#000000af,#01171dbd,#000);
+    border-image-source: linear-gradient(var(--background2), #29024d9a, #01171dbd, var(--background3),var(--background1));
 }
 .servicesWrapper h3{
     color: #38f7b7;
@@ -567,9 +567,10 @@ body.darkMode{
     color: #38f7b7;
     text-transform: uppercase;
     font-family: consolas;
+    background: transparent;
 }
 .projects{
-    background: linear-gradient(var(--themeColor),#0ae99b56,var(--themeColor));
+    background: linear-gradient(var(--background1),var(--background3),var(--background4),#04f7a2ee,var(--background3));
     display: flex;
     justify-content: center;
     width: 100%;
@@ -631,7 +632,7 @@ body.darkMode{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 97%;
+    width: 100%;
     margin: auto;
     background-image: url(images/AI\ uni.webp);
     background-repeat: no-repeat;
@@ -642,7 +643,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(#29024de0,#29024d9a,#01171dbd,#000);
+    border-image-source: linear-gradient(var(--background2),#29024d9a,#01171dbd,#000);
 }
 .contactDiv{
     display: flex;
@@ -673,11 +674,15 @@ body.darkMode{
     border: .1px solid #770addef;
     -webkit-backdrop-filter: blur(2px);
     color: #fff;
-    border-radius: 3px;
+    border-radius: 6px;
     padding: 20px;
     min-width: 450px;
     max-width: max-content;
     font-size: 1.4em;
+    overflow: hidden;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(var(--background4), var(--background5), gray, #fff);
 }
 .contactDiv textarea{
     background: #00000060;
@@ -690,8 +695,7 @@ body.darkMode{
     padding: 10px 10px;
 
     border-image-slice: 1;
-    border-image-source: linear-gradient(#6e0bcaf8, #0168dd9a, #0392b9bd, #fff);
-}
+    border-image-source: linear-gradient(var(--background4), var(--background5), gray, #fff);}
 .contactDiv ::placeholder{
     /* color: #13f0a69a; */
 
