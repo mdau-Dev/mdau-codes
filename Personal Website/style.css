@@ -59,7 +59,9 @@ body.darkMode{
     margin: auto;
     
     color: hsl(86 80 43/0.1);
-    background: linear-gradient(90deg,#07f3a4,#07f3a4,#222,#4dc3f1,#20baf7);
+    /* background: linear-gradient(90deg,#07f3a4,#07f3a4,#222,#4dc3f1,#20baf7); */
+    background: linear-gradient(90deg, #fff, #aaa, #222, #aaa, #fff);
+
     background-clip: text;
     background-position: center;
     background-repeat: no-repeat;
@@ -570,7 +572,7 @@ body.darkMode{
     background: transparent;
 }
 .projects{
-    background: linear-gradient(var(--background1),var(--background3),var(--background4),#04f7a2ee,var(--background3));
+    background: linear-gradient(var(--background1),var(--background3),#04f7a2ee,var(--background3));
     display: flex;
     justify-content: center;
     width: 100%;
@@ -829,7 +831,7 @@ body.darkMode{
     .content{
         content: '';
         position: absolute;
-        top: 35%;
+        top: 20%;
         left: 0;
         background-color: transparent;
         border-radius: 7px;
