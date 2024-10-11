@@ -933,7 +933,6 @@ body.darkMode{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: linear-gradient(#07151f,#025e3e56,#29024d9a);
         width: 90%;
         margin: auto;
         flex-wrap: wrap;
