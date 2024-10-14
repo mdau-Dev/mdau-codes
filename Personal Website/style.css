@@ -643,9 +643,9 @@ body.darkMode{
 .contactMeWrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     background-image: url(images/AI\ uni.webp);
     background-repeat: no-repeat;
@@ -730,17 +730,81 @@ body.darkMode{
     background-color: #f0930760;
     color: #fff;
 } */
+.contactMeWrapper *{
+    padding: 10px;
+}
+.contactMeWrapper h2 {
+    color: #00abf0;
+    text-align: center;
+
+}
 .contactMeWrapper .webPaths{
     display: flex;
     justify-content: center;
-    align-items: end;
-    
+    align-items: center;
+    flex-direction: column;
+}
+.contactMeWrapper .webPaths a{
+    transition: all 1s;
+    text-align: center;
+}
+.contactMeWrapper .webPaths a:hover{
+    color: #07f0a2;
+    font-size: 1.2em;
+    text-decoration: underline;
 }
 .contactMeWrapper .webPaths a{
     color: var(--headers2);
     text-decoration: none;
 
 }
+
+.contactDetails div{
+    display: flex;
+    align-items: center;
+}
+.contactDetails span{
+    color: #ccc;
+}
+
+
+.contactMeWrapper .socialsLink{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contactMeWrapper .socialsLink div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    
+}
+.contactMeWrapper .socialsLink i{
+    align-items: center;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px;
+}
+.contactMeWrapper .socialsLink a{
+    align-items: center;
+    color: #ddd;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px;
+}
+.contactMeWrapper .socialsLink a:hover{
+    color: #38f7b7;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+
+
 
 
 .nameWrapper{
@@ -976,56 +1040,29 @@ body.darkMode{
 .contactMeWrapper {
     padding: 5px;
     width: 97%;
-
-}
-
-.contactDiv {
-
-    width: 90%;
     margin: auto;
-    padding: 7px;
 }
-
-.contactDiv div {
-    padding: 5px;
+.contactMeWrapper{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
 }
-
-.contactDiv p {
-    color: #00abf0;
-    font-weight: 600;
-    font-size: 1em;
-    max-width: max-content;
-    margin: 10px;
-}
-
-.contactDiv input {
-    min-width: 100%;
-    max-width: 100%;
-    font-size: 1em;
-    padding: 10px;
-}
-
-.contactDiv textarea {
-    max-width: 90vw;
+.contactMeWrapper *{
+    width: 80%;
     margin: auto;
-    border-radius: 2px;
-    font-size: 1em;
-    padding: 5px 5px;
 }
-
-.contactDiv ::placeholder {
-    /* color: #13f0a69a; */
-
+.contactMeWrapper .webPaths{
+    width: 100%;
+    margin: auto;
 }
-
-
-.contactMeWrapper .sendEmail {
-    font-size: 1em;
-    letter-spacing: 1px;
+.contactMeWrapper .contactDetails div{
 }
-
-.contactMeWrapper .sendEmail:hover {
-
+.contactMeWrapper .socialsLink{
+    width: max-content;
+}
+.contactMeWrapper .socialsLink a{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
