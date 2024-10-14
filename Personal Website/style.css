@@ -12,9 +12,9 @@
    }
 body{
     --background1: #000;
-    --background2: #6e04d1fb;
-    --background3: #6b04ccfb;
-    --background4: #07f3a4;
+    --background2: #230341fb;
+    --background3: #2d0255fb;
+    --background4: #023b28;
     --background5: #09aa04;
     --background6: #4dc3f1;
 
@@ -516,7 +516,6 @@ body.darkMode{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* background-color: #f0930710; */
     backdrop-filter: blur(2px);
     border-radius: 3px;
     border: .1px solid gray;
@@ -589,7 +588,6 @@ body.darkMode{
     flex-wrap: wrap;
 }
 .projo{
-    background: linear-gradient(#07151f,var(--themeColor),#29024d9a);
     max-height: max-content;
     min-height: 30vh;
     width: 40%;
@@ -600,6 +598,11 @@ body.darkMode{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    /* background: linear-gradient(#07151f,var(--themeColor),#29024d9a); */
+    backdrop-filter: blur(2px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    background: #023b28;
     /* padding: 20px 10px; */
 }
 
@@ -639,8 +642,7 @@ body.darkMode{
 /* This is the contact me section styling */
 .contactMeWrapper{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     width: 100%;
@@ -656,7 +658,7 @@ body.darkMode{
     border-image-slice: fill 1;
     border-image-source: linear-gradient(var(--background2),#29024d9a,#01171dbd,#000);
 }
-.contactDiv{
+/* .contactDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -708,7 +710,6 @@ body.darkMode{
     border-image-slice: 1;
     border-image-source: linear-gradient(var(--background4), var(--background5), gray, #fff);}
 .contactDiv ::placeholder{
-    /* color: #13f0a69a; */
 
 }
 .contactDiv input::-moz-focus-outer{
@@ -728,9 +729,18 @@ body.darkMode{
 .contactMeWrapper .sendEmail:hover{
     background-color: #f0930760;
     color: #fff;
+} */
+.contactMeWrapper .webPaths{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
 }
+.contactMeWrapper .webPaths a{
+    color: var(--headers2);
+    text-decoration: none;
 
-
+}
 
 
 .nameWrapper{
