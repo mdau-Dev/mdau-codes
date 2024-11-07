@@ -12,12 +12,14 @@
    }
 body{
     --background1: #000;
-    --background2: #230341fb;
-    --background3: #2d0255fb;
-    --background4: #023b28;
-    --background5: #09aa04;
-    --background6: #4dc3f1;
+    --background2: #222;
+    --background3: #333;
+    --background4: #4444;
+    --background5: #555;
+    --background6: #777;
 
+    --headerColor: #032e02;
+    --headerColor2: #023d29;
 
     background-color: var(--themeColor);
     position: relative; 
@@ -182,7 +184,7 @@ body.darkMode{
 }
 .bigger{
     height: max-content;
-    width: 30%;
+    width: 40%;
     padding-left: 10px;
 
 }
@@ -197,7 +199,7 @@ body.darkMode{
 
 .bigger img{
     object-fit: cover;
-    object-position: 5px 15%;
+    object-position: center;
     height: max-content;
     max-height: 80vh;
     width: 100%;
@@ -224,7 +226,8 @@ body.darkMode{
     font-size: 2em;
     font-weight: 700;
     margin-top: 10px;
-}
+    /* color: var(--headerColor); */
+    }
 .content p{
     font-size: 1.1em;
     line-height: 1.5;
@@ -251,10 +254,11 @@ body.darkMode{
     }
 }
 
+
 .content h3{
     font-size: 2em;
     font-weight: 700;
-    color: #00abf0;
+    /* color: var(--headerColor2); */
     margin-top: 10px;
     position: relative;
 
