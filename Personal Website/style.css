@@ -92,7 +92,7 @@ body.darkMode{
     height: 2vh;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: start;
 }
 
 .headers{
@@ -101,18 +101,22 @@ body.darkMode{
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    padding-top: 20px;
     font-style: italic;
     /* font-family: consolas; */
     z-index: 100;
 
+    mask-image: linear-gradient( #000, #000, transparent);
+    -webkit-mask-image: line-height(#000, #000, transparent);
 }
 .headers img {
-    max-height: 20vh;
-    max-width: 35%;
+    max-height: 30vh;
+    max-width: 40%;
     cursor: pointer;
-    border-radius: 30%;
-}
+    mask-image: linear-gradient(90deg,#000, #000,transparent);
+    -webkit-mask-image: line-height(90deg,#000, #000,transparent);
+    }
 .logo{
     width: 70%;
     margin: auto;
@@ -188,6 +192,7 @@ body.darkMode{
     padding-left: 10px;
 
     mask-image: linear-gradient(transparent, #000,#000, transparent);
+    -webkit-mask-image: linear-gradient(transparent, #000, #000, transparent);
 }
 @keyframes movement {
     50%{
@@ -209,6 +214,7 @@ body.darkMode{
     transition: all .5s;
     
     mask-image: linear-gradient(90deg,transparent,#000,#000,transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000, #000, transparent);
 }
 
 
