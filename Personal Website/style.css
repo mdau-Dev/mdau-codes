@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', Times, serif; */
+    font-family: 'Poppins', Times, serif;
     letter-spacing: 1.1px;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: consolas; */
    }
    *{
     --themeColor: #000;
@@ -92,7 +93,7 @@ body.darkMode{
     height: 2vh;
     display: flex;
     justify-content: space-between;
-    align-content: start;
+    align-content: center;
 }
 
 .headers{
@@ -161,7 +162,7 @@ body.darkMode{
     text-decoration: none;
     color: #ededed;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     transition: .3s;
     transform: scale(1);
@@ -592,12 +593,21 @@ body.darkMode{
     background: transparent;
 }
 .projects{
-    background: linear-gradient(var(--background1),var(--background3),#012e1eee,var(--background3));
+    /* background: linear-gradient(var(--background1),var(--background3),#012e1eee,var(--background3)); */
     display: flex;
     justify-content: center;
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
+
+    background-attachment: fixed;
+    background-image: url(images/projo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-image-slice: fill 1;
+    border-image-source: linear-gradient(var(--background1), var(--background2), #29024d9a, #01171dbd, var(--background3));
 }
 .projo{
     max-height: max-content;
