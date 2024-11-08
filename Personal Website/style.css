@@ -258,11 +258,11 @@ body.darkMode{
 .content h3{
     font-size: 2em;
     font-weight: 700;
-    /* color: var(--headerColor2); */
+    color: #00abf0;
     margin-top: 10px;
     position: relative;
 
-    animation: headerTr 5s ease-in-out forwards;
+    /* animation: headerTr 5s ease-in-out forwards; */
 }
 @keyframes headerTr{
     0%{
@@ -584,7 +584,7 @@ body.darkMode{
     background: transparent;
 }
 .projects{
-    background: linear-gradient(var(--background1),var(--background3),#04f7a2ee,var(--background3));
+    background: linear-gradient(var(--background1),var(--background3),#012e1eee,var(--background3));
     display: flex;
     justify-content: center;
     width: 100%;
@@ -606,7 +606,7 @@ body.darkMode{
     /* background: linear-gradient(#07151f,var(--themeColor),#29024d9a); */
     backdrop-filter: blur(2px);
     /* -webkit-backdrop-filter: blur(10px); */
-    background: #023b28;
+    background: #023b2834;
     /* padding: 20px 10px; */
 }
 
