@@ -862,18 +862,10 @@ body.darkMode{
     text-wrap: nowrap;
 }
 
-@media (max-width: 342px){
-    * {
-            font-size: 5em;
-        }
-}
-@media (max-width: 540px) {
-    *{
-        font-size: .5em;
-    }
-}
+
+
 @media (max-width: 550px) {
-    
+   
     body{
         margin-top: 0;
         max-height: max-content;
@@ -891,7 +883,7 @@ body.darkMode{
         font-size: 1.2em;
     }
     .headers img{
-        border-bottom-right-radius: 60%;
+        /* border-bottom-right-radius: 60%; */
     }
     .my_nav{
         display: none;
@@ -910,6 +902,7 @@ body.darkMode{
         justify-content: center;
         align-items: center;
 
+        font-size: .7em;
         z-index: 1;
         /* padding: 0 10%; */
         
@@ -1020,7 +1013,7 @@ body.darkMode{
         min-width: 90%;
          margin: auto;
          padding: 10px;
-         border: .1px solid #f09307;
+         /* border: .1px solid #f09307; */
     }
     .about_Me{
         border-bottom: 0px solid gray;
@@ -1075,6 +1068,7 @@ body.darkMode{
         border: .5px solid rgb(6, 114, 60);
         border-radius: 6px;
         margin: 10px;
+        font-size: .7em;
         /* border: .1px solid #f09307; */
         /* padding: 20px 10px; */
     }
@@ -1086,7 +1080,7 @@ body.darkMode{
 /* This is the contact me section styling */
 .contactMeWrapper {
     padding: 5px;
-    width: 97%;
+    width: 100%;
     margin: auto;
 }
 .contactMeWrapper{
@@ -1095,12 +1089,15 @@ body.darkMode{
     justify-content: center;
 }
 .contactMeWrapper *{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .contactMeWrapper .webPaths{
     width: 100%;
     margin: auto;
+}
+.contactMeWrapper span{
+    text-wrap: wrap;
 }
 .contactMeWrapper .contactDetails div{
 }
