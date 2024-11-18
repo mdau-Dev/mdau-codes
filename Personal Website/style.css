@@ -135,7 +135,7 @@ body.darkMode{
     -webkit-mask-image: line-height(transparent,#000, #000, transparent);
 }
 .headers img {
-    height: 20vh;
+    height: 12vh;
     width: auto;
     cursor: pointer;
     transition: .5s all;
@@ -830,7 +830,7 @@ body.darkMode{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     margin: auto;
     
 }
@@ -874,6 +874,7 @@ body.darkMode{
     align-items: center;
     padding: 10px;
     text-wrap: wrap;
+    text-align: center;
 }
 
 
@@ -902,7 +903,7 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        letter-spacing: 20px;
+        letter-spacing: 15px;
         font-size: 1.3em;
     }
 
@@ -1045,14 +1046,39 @@ body.darkMode{
     }
 
 
+
     .contactMeWrapper {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .copy {
+    .webPaths a{
+        font-size: .8em;
+    }
+    .contactMeWrapper .webPaths a:hover {
+            color: #07f0a2;
+            font-size: .8em;
+            text-decoration: underline;
+    }
 
+    .contactDetails span {
+        font-size: .8em;
+    }        
+    .contactMeWrapper .socialsLink i {
+        font-size: .8em;
+    }
+    .contactMeWrapper .socialsLink a {
+        font-size: .8em;
+    }
+    
+    .contactMeWrapper .socialsLink a:hover {
+        font-size: .8em;
+    }
+
+
+    .copy {
+        text-align: center;
         font-size: .6em;
     }
 }
