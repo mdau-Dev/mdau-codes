@@ -939,8 +939,8 @@ body.darkMode{
         object-position: bottom;
         max-height: 50vh;
 
-        mask-image: linear-gradient(transparent, transparent, #000, transparent);
-        -webkit-mask-image: linear-gradient(transparent, transparent, #000, transparent);
+        mask-image: linear-gradient(transparent, transparent,#000, #000, transparent);
+        -webkit-mask-image: linear-gradient(transparent, transparent,#000, #000, transparent);
     }
 
     .bigger img {
