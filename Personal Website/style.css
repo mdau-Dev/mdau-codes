@@ -450,8 +450,6 @@ body.darkMode{
 .myInfoWrapper h1{
     font-size: 2em;
     color: #38f7b7;
-    font-family: consolas;
-    letter-spacing: 1.2px;
     text-align: center;
     text-transform: uppercase;
     padding: 5px;
@@ -618,13 +616,12 @@ body.darkMode{
     font-style: normal;
     padding-top: 15px;
     text-wrap: wrap;
-}
-.wrapperProjects .myProjectsHeader{
     color: #38f7b7;
     text-transform: uppercase;
     font-family: consolas;
     background: transparent;
 }
+
 .projects{
     display: flex;
     justify-content: center;
@@ -888,7 +885,7 @@ body.darkMode{
     }
 
     .wrapperGeneral {
-        width: 110%;
+        width: 100%;
         margin: auto;
         position: relative;
     }
