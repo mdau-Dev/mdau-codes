@@ -102,7 +102,7 @@ body.darkMode{
 .loaderWrapper .name span{
     width: 100%;
     margin: auto;
-    letter-spacing: 30px;
+    letter-spacing: 20px;
     font-size: 1.3em;
     text-align: center;
 }

@@ -6,8 +6,8 @@ window.addEventListener('load',()=>{
     const loader=document.querySelector('.loaderWrapper');
 
     setTimeout(()=>{
-        // loader.classList.add('hide');
-        // wrapperGeneral.classList.remove("lessHeight")
+        loader.classList.add('hide');
+        wrapperGeneral.classList.remove("lessHeight")
     },4000)
 })
 
