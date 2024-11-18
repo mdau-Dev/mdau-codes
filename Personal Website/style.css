@@ -926,11 +926,11 @@ body.darkMode{
     }
 
     .wrapBigger {
-        width: 90%;
+        width: 98%;
         margin: auto;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-end;
+        align-items: end;
     }
 
     .bigger {
@@ -943,8 +943,8 @@ body.darkMode{
     }
 
     .bigger img {
-        mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
-        -webkit-mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
+        /* mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
+        -webkit-mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent); */
     }
 
     .content {
