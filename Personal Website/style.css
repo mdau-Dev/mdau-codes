@@ -876,7 +876,7 @@ body.darkMode{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 
