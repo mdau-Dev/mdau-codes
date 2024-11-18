@@ -85,7 +85,7 @@ body.darkMode{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    animation: nameAnime 1s ease-in-out infinite;
+    animation: nameAnime 2s ease-in-out infinite;
 }
 @keyframes nameAnime {
     30%{
@@ -903,7 +903,7 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        letter-spacing: 15px;
+        letter-spacing: 10px;
         font-size: 1.3em;
     }
 
@@ -939,8 +939,8 @@ body.darkMode{
         object-position: bottom;
         max-height: 50vh;
 
-        mask-image: linear-gradient(transparent, transparent, #000, transparent);
-        -webkit-mask-image: linear-gradient(transparent, transparent, #000, transparent);
+        mask-image: linear-gradient(transparent, #000, #000, transparent);
+        -webkit-mask-image: linear-gradient(transparent, #000, #000, transparent);
     }
 
     .bigger img {
