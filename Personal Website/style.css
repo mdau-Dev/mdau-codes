@@ -102,7 +102,7 @@ body.darkMode{
 .loaderWrapper .name span{
     width: 100%;
     margin: auto;
-    letter-spacing: 10px;
+    letter-spacing: 30px;
     font-size: 1.3em;
     text-align: center;
 }
@@ -893,7 +893,7 @@ body.darkMode{
 
     .loaderWrapper {
         /* background-color: red; */
-        width: 112%;
+        width: 100%;
         margin: auto;
         height: 85dvh;
         border-radius: 6px;
@@ -902,7 +902,8 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        font-size: 1.5em;
+        letter-spacing: 20px;
+        font-size: 1.3em;
     }
 
     .headers {
@@ -925,14 +926,15 @@ body.darkMode{
     }
 
     .wrapBigger {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: start;
+        align-items: start;
     }
 
     .bigger {
-        width: 55%;
+        width: 65%;
         object-position: bottom;
         max-height: 50vh;
 
@@ -950,16 +952,55 @@ body.darkMode{
         margin: auto;
     }
 
+    .content h1 {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .content p {
+        font-size: .7em;
+        margin-top: 4px;
+    }
+
+    .content h3 {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .content .hire:hover {
+        font-size: 1em;
+    }
+
 
     .myInfoWrapper {
         flex-direction: column;
+    }
+
+    .myInfoWrapper h1 {
+        font-size: 1.2em;
+    }
+
+    .myInfo p {
+        font-size: .8em;
     }
 
     .myInfo {
         width: 85%;
     }
 
+    .myInfo span {
+        font-size: 1em;
+    }
 
+    .skills_wrapper li {
+        font-size: .6em;
+    }
+
+
+    .servicesWrapper h3 {
+        font-size: 1em;
+    }
 
     .wrapServices {
         width: 100%;
@@ -972,6 +1013,14 @@ body.darkMode{
         width: 95%;
     }
 
+    .card h3 {
+        font-size: .8em;
+    }
+
+
+    .wrapperProjects .myProjectsHeader {
+        font-size: 1em;
+    }
 
     .projects {
         width: 100%;
@@ -986,6 +1035,15 @@ body.darkMode{
         margin: auto;
     }
 
+    .projo h1 {
+        font-size: .9em;
+    }
+
+    .btnViewWebsite button,
+    .btnViewWebsite .hire {
+        font-size: .8em;
+    }
+
 
     .contactMeWrapper {
         width: 100%;
@@ -993,4 +1051,8 @@ body.darkMode{
         align-items: center;
     }
 
+    .copy {
+
+        font-size: .6em;
+    }
 }
