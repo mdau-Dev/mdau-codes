@@ -85,14 +85,15 @@ body.darkMode{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    animation: nameAnime 2s ease-in-out infinite;
+    animation: nameAnime 3s ease-in-out infinite;
 }
 @keyframes nameAnime {
     30%{
         background-size: 70% 100%;
     }
     50%{
-        background-size: 120% 100%;
+        background-size: 100% 100%;
+
     }
     80%{
         background-size: 50% 100%;
@@ -903,7 +904,9 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        font-size: .5em;
+        font-size: 1.5em;
+        letter-spacing: 10px;
+        font-style: italic;
     }
 
     .headers {
