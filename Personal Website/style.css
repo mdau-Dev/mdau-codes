@@ -903,8 +903,7 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        letter-spacing: 10px;
-        font-size: 1.3em;
+        font-size: .5em;
     }
 
     .headers {
@@ -927,11 +926,11 @@ body.darkMode{
     }
 
     .wrapBigger {
-        width: 98%;
+        width: 90%;
         margin: auto;
         display: flex;
-        justify-content: flex-end;
-        align-items: end;
+        justify-content: start;
+        align-items: start;
     }
 
     .bigger {
@@ -939,13 +938,13 @@ body.darkMode{
         object-position: bottom;
         max-height: 50vh;
 
-        mask-image: linear-gradient(transparent, transparent,#000, #000, transparent);
-        -webkit-mask-image: linear-gradient(transparent, transparent,#000, #000, transparent);
+        mask-image: linear-gradient(transparent, transparent, #000, transparent);
+        -webkit-mask-image: linear-gradient(transparent, transparent, #000, transparent);
     }
 
     .bigger img {
-        mask-image: linear-gradient(90deg, transparent, #000, #000, #000, transparent);
-        -webkit-mask-image: linear-gradient(90deg, transparent, #000, #000, #000, transparent);
+        mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
+        -webkit-mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
     }
 
     .content {
@@ -976,6 +975,14 @@ body.darkMode{
 
     .myInfoWrapper {
         flex-direction: column;
+        background-attachment: fixed;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border-image-slice: fill 1;
+        border-image-source: linear-gradient(var(--background2), var(--background1), #29024d9a, #01171dbd, var(--background3), var(--background1));
     }
 
     .myInfoWrapper h1 {
@@ -999,6 +1006,19 @@ body.darkMode{
     }
 
 
+    .servicesWrapper {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        overflow: hidden;
+        border-radius: 4px;
+        border-image-slice: fill 1;
+        border-image-source: linear-gradient(var(--background1), var(--background2), #29024d9a, #01171dbd, var(--background3), var(--background1));
+    }
+
     .servicesWrapper h3 {
         font-size: 1em;
     }
@@ -1016,9 +1036,6 @@ body.darkMode{
 
     .card h3 {
         font-size: .8em;
-    }
-    .card p{
-        font-size: .7em;
     }
 
 
@@ -1042,15 +1059,11 @@ body.darkMode{
     .projo h1 {
         font-size: .9em;
     }
-    .projo p{
-        font-size: .7em;
-    }
 
     .btnViewWebsite button,
     .btnViewWebsite .hire {
         font-size: .8em;
     }
-
 
 
     .contactMeWrapper {
@@ -1059,32 +1072,8 @@ body.darkMode{
         align-items: center;
     }
 
-    .webPaths a{
-        font-size: .8em;
-    }
-    .contactMeWrapper .webPaths a:hover {
-            color: #07f0a2;
-            font-size: .8em;
-            text-decoration: underline;
-    }
-
-    .contactDetails span {
-        font-size: .8em;
-    }        
-    .contactMeWrapper .socialsLink i {
-        font-size: .8em;
-    }
-    .contactMeWrapper .socialsLink a {
-        font-size: .8em;
-    }
-    
-    .contactMeWrapper .socialsLink a:hover {
-        font-size: .8em;
-    }
-
-
     .copy {
-        text-align: center;
+
         font-size: .6em;
     }
 }

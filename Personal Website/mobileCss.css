@@ -89,6 +89,14 @@
 
     .myInfoWrapper{
         flex-direction: column;
+         background-attachment: fixed;
+        /* background-image: url(images/AI\ 2.webp); */
+         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border-image-slice: fill 1;
+        border-image-source: linear-gradient(var(--background2),var(--background1), #29024d9a, #01171dbd, var(--background3),var(--background1));
     }
     .myInfoWrapper h1{
         font-size: 1.2em;
@@ -107,6 +115,18 @@
     }
 
 
+    .servicesWrapper{
+    /* background-image: url(images/AI\ uni.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    overflow: hidden;
+    border-radius: 4px;
+    border-image-slice: fill 1;
+    border-image-source: linear-gradient(var(--background1), var(--background2), #29024d9a, #01171dbd, var(--background3), var(--background1));
+    }
     .servicesWrapper h3{
         font-size: 1em;
     }
