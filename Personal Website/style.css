@@ -2,27 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', Times, serif;
-    letter-spacing: 1.1px;
+    /* font-family: 'Poppins', Times, serif; */
+    /* letter-spacing: 1.1px; */
     /* font-family: 'Times New Roman', Times, serif; */
-    /* font-family: consolas; */
+    font-family: consolas;
    }
    *{
     --themeColor: #000;
     --headers2: 
    }
 body{
-    --background1: #000;
+    --background1: #fff;
     --background2: #222;
     --background3: #333;
     --background4: #4444;
     --background5: #555;
     --background6: #777;
 
-    --background2WithTransparency: #2e2d2d54;
+    --background2WithTransparency: #2e2d2d46;
 
     --headerColor: #032e02;
     --headerColor2: #023d29;
+
+    --darkTextColor: #fff;
 
     --border-color: black;
 
@@ -30,8 +32,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--themeColor);
-    color: #ececec;
+    background-color: var(--background1);
+    color: var(--darkTextColor);
     height: max-content;
     min-height: 100vh;
     width: 100%;
@@ -48,7 +50,6 @@ body{
 }
 body.darkMode{
     /* background-color: #07151f; */
-    background-color: var(--themeColor);
 }
 
 
@@ -63,7 +64,7 @@ body.darkMode{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     /* background: #002331; */
     background-color: var(--themeColor);
 }
@@ -106,18 +107,38 @@ body.darkMode{
     letter-spacing: 20px;
     font-size: 1.3em;
     text-align: center;
+    transition: 1s;
 }
 .hide{
-    display: none;
+    transform: scale(0);
 }
 
 
 
+.wrapperLandingPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-image: url(images/AI\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-image-slice: fill 1;
+    border-image-source: linear-gradient( #000, #01171ddc);
+    height: 100vh;
+}
+
 .header{
-    height: 2vh;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-content: center;
+    width: 100%;
 }
 
 .headers{
@@ -127,16 +148,15 @@ body.darkMode{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding-top: 10px;
     font-style: italic;
     /* font-family: consolas; */
     z-index: 100;
 
-    mask-image: linear-gradient(transparent ,#000, #000, transparent);
+    mask-image: linear-gradient(transparent, #000, #000, transparent);
     -webkit-mask-image: line-height(transparent,#000, #000, transparent);
 }
 .headers img {
-    height: 12vh;
+    height: 20vh;
     width: auto;
     cursor: pointer;
     transition: .5s all;
@@ -147,55 +167,25 @@ body.darkMode{
     height: 30vh;
     width: auto;
 
-    border: var(--border-color) solid .2px;
+    border: var(--border-color) solid .3px;
 
-    mask-image: linear-gradient(90deg, #000, #000,#000);
-    -webkit-mask-image: line-height(90deg, #000, #000,#000);
+    /* mask-image: linear-gradient(90deg, #000, #000,#000);
+    -webkit-mask-image: line-height(90deg, #000, #000,#000); */
 }
-/* 
-.logo{
-    width: 70%;
-    margin: auto;
-    text-decoration: none;
-    padding: 7px 10px;
-    letter-spacing: 7vh;
-    text-align: center;
-    font-size: 1em;
-    text-shadow: 1px 2px 1px;
-
-    color: hsla(71, 100%, 50%, 0.205);
-    background: linear-gradient(90deg,rgba(255, 0, 0, 0.096),#00acf01e,rgba(255, 255, 0, 0.267),rgba(128, 255, 0, 0.062));
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    animation: color_change 2s ease-in-out infinite;
-}
-@keyframes color_change{
-    25%{
-        background-size: 0% 100%;
-    }
-    50%{
-        background-size: 100% 100%;
-    }
-    75%{
-        background-size: 50% 100%;
-    }
-    
-} */
 
 
 
 .headers .my_nav{
     justify-content: end;
+    align-items: start;
+    padding-top: 30px;
     /* padding-right: 5%; */
 }
 .my_nav a{
     margin: 15px;
     justify-content: space-between;
     text-decoration: none;
-    color: #ededed;
+    color: var(--darkTextColor);
     font-weight: 300;
     font-size: 17px;
     cursor: pointer;
@@ -204,22 +194,22 @@ body.darkMode{
 }
 .my_nav a:hover,
 .my_nav a.home{
-    color: #75b2ca;
+    color: #29bdf8;
 }
 
 
 
 .about_me{
-    position: relative;
-    min-height: 100vh;
-    height: max-content;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 0px;
     width: 100%;
+    padding-bottom: 0px;
+
     /* padding: 0 10%; */
-    background: linear-gradient(90deg,var(--themeColor), var(--themeColor), var(--themeColor), var(--themeColor));
+    /* background: linear-gradient(90deg,var(--themeColor), var(--themeColor), var(--themeColor), var(--themeColor)); */
     
 }
 
@@ -227,27 +217,31 @@ body.darkMode{
     width: 40%;
 }
 .bigger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: max-content;
     width: 100%;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    /* background-color: blue; */
 
-    mask-image: linear-gradient(transparent, #000,#000, transparent);
-    -webkit-mask-image: linear-gradient(transparent, #000, #000, transparent);
+    mask-image: linear-gradient(#000,#000, transparent);
+    -webkit-mask-image: linear-gradient(#000, #000, transparent);
 }
 
 
 .bigger img{
     object-fit: cover;
-    /* object-position: 40% 60%; */
     object-position: center;
     height: max-content;
     max-height: 80vh;
-    width: 100%;
+    width: 60%;
+    margin: auto;
     border-radius:  10%;
     transition: all .5s;
     
-    mask-image: linear-gradient(90deg,transparent,#00000057,#000,#000,#00000057,transparent);
-    -webkit-mask-image: linear-gradient(90deg, transparent,#00000057, #000, #000,#00000057, transparent);
+    mask-image: linear-gradient(90deg,transparent,#000,#000,#000,#000,transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent,#000, #000, #000,#000, transparent);
 }
 
 
@@ -258,7 +252,7 @@ body.darkMode{
     border-radius: 7px;
     width: 50%;
     max-width: 100%;
-    padding: 10px;
+    padding: 0px;
     backdrop-filter: blur(3px);
     overflow: hidden;
 
@@ -283,7 +277,7 @@ body.darkMode{
     width: 100%;
     height: 100%;
     /* background-color: #07151f; */
-    background-color: var(--themeColor);
+    background-color: var(--);
     position: absolute;
     animation: showRight 5s ease-in-out forwards;
     animation-delay: 2s;
@@ -317,12 +311,18 @@ body.darkMode{
         }
 }
 .content .hire{
-    color: #38f7b7;
+    /* background: #076445; */
+    border-radius: 3px;
+    border: .1px #fff solid;
+    padding: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #00abf0;
     text-decoration: none;
     transition: all 1s;
 }
 .content .hire:hover{
-    background-color: #076445;
+    background-color: var(--themeColor);
     font-size: 1.3em;
 }
 
@@ -435,7 +435,9 @@ body.darkMode{
     background-position: center;
     background-attachment: fixed;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(var(--background2),var(--background1), #29024d9a, #01171dbd, var(--background3),var(--background1));
+    border-image-source: linear-gradient(#000, #29024d91, #01171d9d);
+
+    border-top: .1px gray solid;
 
     display: flex;
     justify-content: space-around;
@@ -446,10 +448,10 @@ body.darkMode{
     margin: 50px;
     width: 100%;
     margin: auto;
-
+    color: var(--background1);
 }
 .myInfoWrapper h1{
-    font-size: 2em;
+    font-size: 1.4em;
     color: #38f7b7;
     text-align: center;
     text-transform: uppercase;
@@ -459,19 +461,20 @@ body.darkMode{
 .myInfo{
     width: 30%;
     margin: 30px;
-    border: .1px solid var(--border-color);
+    border: 0px solid gray;
     padding: 10px;
     border-radius: 4px;
     line-height: 1.5;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
 
-    background: var(--background2WithTransparency);
+    /* background: var(--background2WithTransparency); */
 }
 .myInfo p{
     padding: 5px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
+
 .about_Me{
     /* border-right: 0px solid gray; */
 }
@@ -488,7 +491,7 @@ body.darkMode{
 .myInfo span{
     color: #00abf0;
     letter-spacing: 2px;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 
@@ -497,7 +500,7 @@ body.darkMode{
 }
 .skills_wrapper li {
     margin-left: 7px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .skills_wrapper .aws{
     list-style-type: none;
@@ -537,7 +540,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(var(--background1),var(--background2), #29024d9a, #01171dbd, var(--background3),var(--background1));
+    border-image-source: linear-gradient(#01171dd0, #29024d91, #01171d9d);
 }
 .servicesWrapper h3{
     color: #38f7b7;
@@ -620,7 +623,7 @@ body.darkMode{
     color: #38f7b7;
     text-transform: uppercase;
     font-family: consolas;
-    background: transparent;
+    background-color: #222;
 }
 
 .projects{
@@ -637,7 +640,7 @@ body.darkMode{
     background-position: center;
     background-attachment: fixed;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient( var(--background1),var(--background2),var(--background1), var(--background2));
+    border-image-source: linear-gradient(#01171dd0, #29024d91, #01171d9d);
 }
 .projo{
     max-height: max-content;
@@ -678,8 +681,7 @@ body.darkMode{
     align-items: center;
     justify-content: end;
 }
-.btnViewWebsite button,
-.btnViewWebsite .hire{
+.btnViewWebsite button{
     background: transparent;
     border-radius: 3px;
     border: .1px gray solid;
@@ -708,7 +710,7 @@ body.darkMode{
     overflow: hidden;
     border-radius: 4px;
     border-image-slice: fill 1;
-    border-image-source: linear-gradient(var(--background2),var(--background2),#29024d9a,#01171dbd,#000);
+    border-image-source: linear-gradient(#000,#29024d9a,#01171dbd,#000);
 }
 /* .contactDiv{
     display: flex;
@@ -865,10 +867,11 @@ body.darkMode{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000;
 }
 
 .copy{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -876,6 +879,7 @@ body.darkMode{
     padding: 10px;
     text-wrap: wrap;
     text-align: center;
+    background-color: #000;
 }
 
 
@@ -904,50 +908,52 @@ body.darkMode{
     .loaderWrapper .name {}
 
     .loaderWrapper .name span {
-        font-size: 1.5em;
+        font-size: 1.1em;
         letter-spacing: 10px;
         font-style: italic;
     }
 
+    .header{
+        /* background-color: blue; */
+        max-height: 2vh;
+    }
     .headers {
         width: 100%;
         justify-content: space-between;
     }
 
+    .headers img{
+        height: 15vh;
+    }
     .my_nav {
         display: none;
     }
 
 
     .about_me {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        gap: 0px;
+        margin-bottom: 20px;
     }
 
     .wrapBigger {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: flex;
         justify-content: start;
         align-items: start;
+
     }
 
     .bigger {
-        width: 65%;
-        object-position: bottom;
-        max-height: 50vh;
-
-        mask-image: linear-gradient(transparent, transparent, #000, transparent);
-        -webkit-mask-image: linear-gradient(transparent, transparent, #000, transparent);
+        max-height: 45vh;
+        mask-image: linear-gradient(#000);
+        -webkit-mask-image: linear-gradient(#000);
     }
 
     .bigger img {
-        mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
-        -webkit-mask-image: linear-gradient(90deg, transparent, #00000057, #000, #000, #00000057, transparent);
+
+        mask-image: linear-gradient(90deg, transparent, #000, #000, #000, #000, transparent);
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000, #000, #000, #000, transparent);
     }
 
     .content {
@@ -978,14 +984,14 @@ body.darkMode{
 
     .myInfoWrapper {
         flex-direction: column;
-        background-attachment: fixed;
+        /* background-attachment: fixed;
         background-image: url();
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         border-image-slice: fill 1;
-        border-image-source: linear-gradient(var(--background2), var(--background1), #29024d9a, #01171dbd, var(--background3), var(--background1));
+        border-image-source: linear-gradient(var(--background2), var(--background1), #29024d9a, #01171dbd, var(--background3), var(--background1)); */
     }
 
     .myInfoWrapper h1 {
@@ -993,7 +999,7 @@ body.darkMode{
     }
 
     .myInfo p {
-        font-size: .8em;
+        font-size: .9em;
     }
 
     .myInfo {
@@ -1005,12 +1011,12 @@ body.darkMode{
     }
 
     .skills_wrapper li {
-        font-size: .6em;
+        font-size: .9em;
     }
 
 
     .servicesWrapper {
-        background-image: url();
+        /* background-image: url();
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1019,11 +1025,11 @@ body.darkMode{
         overflow: hidden;
         border-radius: 4px;
         border-image-slice: fill 1;
-        border-image-source: linear-gradient(var(--background1), var(--background2), #29024d9a, #01171dbd, var(--background3), var(--background1));
+        border-image-source: linear-gradient(var(--background1), var(--background2), #29024d9a, #01171dbd, var(--background3), var(--background1)); */
     }
 
     .servicesWrapper h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .wrapServices {
@@ -1038,7 +1044,7 @@ body.darkMode{
     }
 
     .card h3 {
-        font-size: .8em;
+        font-size: 1em;
     }
 
 
@@ -1060,12 +1066,12 @@ body.darkMode{
     }
 
     .projo h1 {
-        font-size: .9em;
+        font-size: 1.2em;
     }
 
     .btnViewWebsite button,
     .btnViewWebsite .hire {
-        font-size: .8em;
+        font-size: 1em;
     }
 
 
