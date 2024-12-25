@@ -11,6 +11,8 @@ window.addEventListener('load',()=>{
     },4000)
 })
 
+
+
 console.log('Mdau')
 const imageParent=document.querySelector('.bigger');
 const image=document.querySelector('.myImage');
