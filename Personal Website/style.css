@@ -561,7 +561,7 @@ body.darkMode{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
 
     overflow: hidden;
     border-radius: 4px;
@@ -1038,8 +1038,7 @@ body.darkMode{
     }
 
 
-    .servicesWrapper {
-
+.servicesWrapper {
     background-attachment: scroll;
 }
 

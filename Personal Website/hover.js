@@ -8,7 +8,7 @@ window.addEventListener('load',()=>{
     setTimeout(()=>{
         loader.classList.add('hide');
         wrapperGeneral.classList.remove("lessHeight")
-    },4000)
+    },2000)
 })
 
 
